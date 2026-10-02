@@ -1,0 +1,18 @@
+/* Páginas internas */
+.pagina { padding-top: 8rem; min-height: 70vh; }
+.texto { margin-top: 1rem; max-width: 560px; color: var(--texto-suave); }
+
+.filtros { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 2rem 0; }
+.filtros input { flex: 1 1 220px; padding: 0.7rem 1.1rem; border-radius: 999px; border: 1px solid var(--borda); background: var(--bege-claro); }
+.chip { padding: 0.6rem 1.2rem; border-radius: 999px; border: 1px solid var(--borda); background: transparent; cursor: pointer; }
+.chip.ativo { background: var(--escuro); color: var(--bege-claro); }
+
+.espacos { list-style: none; display: flex; flex-wrap: wrap; gap: 1.2rem; margin-top: 2rem; }
+.espacos li { background: var(--bege-claro); padding: 1.2rem 1.5rem; border-radius: 14px; font-size: 0.9rem; }
+.espacos span { display: block; font-size: 1.6rem; }
+
+.form { display: grid; gap: 1.2rem; max-width: 420px; margin: 2rem 0; }
+.form label { display: grid; gap: 0.4rem; font-size: 0.9rem; }
+.form input, .form select { padding: 0.7rem 1rem; border-radius: 10px; border: 1px solid var(--borda); background: var(--bege-claro); }
+.erro { color: #a33; font-size: 0.8rem; }
+.sucesso { margin-top: 2rem; padding: 1rem 1.4rem; background: var(--bege-claro); border-radius: 10px; }

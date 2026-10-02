@@ -1,0 +1,37 @@
+/* HERO: sem foto ainda, usa degradê. Para usar a foto: background-image: url('../assets/hero.jpg') */
+.hero { min-height: 560px; display: flex; align-items: center; padding: 7rem max(1.5rem, calc((100% - var(--largura)) / 2)) 4rem; color: #fff; background: linear-gradient(90deg, rgba(20, 20, 20, 0.9), rgba(20, 20, 20, 0.35)), linear-gradient(135deg, #4a4036, #1c1c1c); }
+.hero-conteudo { max-width: 460px; }
+.hero-conteudo p { margin: 1.2rem 0 2rem; opacity: 0.9; }
+.hero-botoes { display: flex; flex-wrap: wrap; gap: 0.8rem; }
+
+.secao-topo { display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem; }
+.link-ver { font-size: 0.85rem; }
+
+.grid-cursos { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
+.curso-card { background: var(--bege-claro); border-radius: 14px; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s; }
+.curso-card:hover { transform: translateY(-4px); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12); }
+.curso-img { height: 110px; background: linear-gradient(135deg, #8a7a68, #4a4036); }
+.curso-info { padding: 1.2rem; }
+.curso-info h3 { font-weight: 500; font-size: 1rem; min-height: 2.8rem; }
+.curso-meta { font-size: 0.8rem; color: var(--texto-suave); margin: 0.3rem 0 0.8rem; }
+.curso-rodape { display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; }
+.seta { width: 34px; height: 34px; border-radius: 50%; background: var(--bege); display: grid; place-items: center; }
+
+.sobre { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
+.sobre p { margin: 1.2rem 0 2rem; opacity: 0.8; max-width: 420px; }
+.sobre-img { min-height: 260px; border-radius: 14px; background: linear-gradient(135deg, #6f6253, #3a3631); }
+.numeros { display: flex; flex-wrap: wrap; gap: 2rem; }
+.numeros strong { display: block; font-size: 1.6rem; font-weight: 400; }
+.numeros span { font-size: 0.75rem; opacity: 0.7; }
+
+.faixa-preco { display: flex; flex-wrap: wrap; justify-content: space-around; gap: 2rem; align-items: center; padding: 3rem 1.5rem; background: #d9cdbd; }
+.preco-grande { font-size: 3.2rem; font-weight: 500; }
+.preco-grande small { font-size: 1.6rem; font-weight: 300; }
+.faixa-preco h4 { font-weight: 500; }
+.faixa-preco p { margin-bottom: 1rem; font-size: 0.85rem; }
+
+.cta { background: var(--bege-claro); }
+.cta h2 { font-size: 1.8rem; }
+.cta p { margin: 0.5rem 0 1.5rem; color: var(--texto-suave); max-width: 420px; }
+
+@media (max-width: 800px) { .sobre { grid-template-columns: 1fr; } }

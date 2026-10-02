@@ -1,0 +1,17 @@
+.header { position: absolute; top: 0; left: 0; right: 0; z-index: 10; display: flex; align-items: center; justify-content: space-between; padding: 1.2rem max(1.5rem, calc((100% - var(--largura)) / 2)); color: #fff; }
+.logo { display: flex; align-items: center; gap: 0.6rem; font-size: 0.6rem; letter-spacing: 0.2em; line-height: 1.1; }
+.logo strong { display: block; font-size: 1.1rem; font-weight: 500; }
+.logo-a { font-size: 2.2rem; font-weight: 600; letter-spacing: 0; }
+
+.nav { display: flex; align-items: center; gap: 2rem; font-size: 0.85rem; }
+.nav a { opacity: 0.75; padding-bottom: 4px; border-bottom: 1px solid transparent; }
+.nav a:hover, .nav a.active { opacity: 1; border-color: #fff; }
+.btn-portal { background: rgba(0, 0, 0, 0.35); color: #fff; border: 1px solid rgba(255, 255, 255, 0.2); padding: 0.5rem 1.1rem; border-radius: 999px; cursor: pointer; }
+
+.menu-btn { display: none; background: none; border: 0; color: #fff; font-size: 1.6rem; cursor: pointer; }
+
+@media (max-width: 800px) {
+  .menu-btn { display: block; }
+  .nav { display: none; position: absolute; top: 100%; left: 0; right: 0; flex-direction: column; padding: 1.5rem; background: var(--escuro); }
+  .nav.aberto { display: flex; }
+}

@@ -1,0 +1,5 @@
+.footer { background: var(--escuro); color: var(--bege-claro); padding: 3rem max(1.5rem, calc((100% - var(--largura)) / 2)) 1.5rem; }
+.footer-inner { display: flex; flex-wrap: wrap; gap: 2rem; justify-content: space-between; align-items: flex-start; }
+.footer nav { display: flex; gap: 1.2rem; font-size: 0.85rem; opacity: 0.8; }
+.footer address { font-style: normal; font-size: 0.85rem; opacity: 0.8; }
+.footer small { display: block; margin-top: 2rem; font-size: 0.7rem; opacity: 0.5; }
