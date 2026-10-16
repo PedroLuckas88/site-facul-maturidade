@@ -1,4 +1,4 @@
-.header { position: absolute; top: 0; left: 0; right: 0; z-index: 10; display: flex; align-items: center; justify-content: space-between; padding: 1.2rem max(1.5rem, calc((100% - var(--largura)) / 2)); color: #fff; }
+.header { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 1.2rem max(1.5rem, calc((100% - var(--largura)) / 2)); color: #fff; background: rgba(26, 24, 22, 0.92); backdrop-filter: blur(8px); }
 .logo { display: flex; align-items: center; gap: 0.6rem; font-size: 0.6rem; letter-spacing: 0.2em; line-height: 1.1; }
 .logo strong { display: block; font-size: 1.1rem; font-weight: 500; }
 .logo-a { font-size: 2.2rem; font-weight: 600; letter-spacing: 0; }

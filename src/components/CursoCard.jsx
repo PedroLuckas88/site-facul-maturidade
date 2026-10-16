@@ -4,7 +4,12 @@ import { formatarPreco } from '../data/cursos'
 export default function CursoCard({ curso }) {
   return (
     <article className="curso-card">
-      <div className="curso-img" />
+      <div
+        className="curso-img"
+        style={{ backgroundImage: `url(${curso.imagem})` }}
+        role="img"
+        aria-label={`Imagem do curso de ${curso.nome}`}
+      />
       <div className="curso-info">
         <h3>{curso.nome}</h3>
         <p className="curso-meta">{curso.tipo} · {curso.semestres} semestres</p>
