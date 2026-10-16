@@ -1,0 +1,49 @@
+/* Página de detalhe do curso */
+
+/* Banner do topo: usa a imagem do card do curso como fundo */
+.curso-hero { position: relative; display: flex; align-items: flex-end; min-height: 460px; padding: 9rem max(1.5rem, calc((100% - var(--largura)) / 2)) 3.5rem; color: #fff; background-color: var(--escuro); background-size: cover; background-position: center; }
+.curso-hero::before { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(20, 20, 20, 0.75), rgba(20, 20, 20, 0.35) 45%, rgba(20, 20, 20, 0.9)); }
+.curso-hero-conteudo { position: relative; z-index: 1; width: 100%; max-width: var(--largura); }
+.curso-hero h1 { font-size: clamp(2rem, 5vw, 3.2rem); max-width: 20ch; margin: 0.3rem 0 1.4rem; }
+.curso-hero .eyebrow { margin-bottom: 0.6rem; }
+
+.voltar { display: inline-block; margin-bottom: 1.2rem; font-size: 0.8rem; opacity: 0.75; }
+.voltar:hover { opacity: 1; }
+
+.curso-hero-meta { list-style: none; display: flex; flex-wrap: wrap; gap: 0.6rem 2.5rem; font-size: 0.9rem; }
+.curso-hero-meta strong { font-weight: 500; }
+.curso-hero-meta li { opacity: 0.85; }
+
+.subtitulo { margin: 2.5rem 0 1rem; font-size: 1.05rem; font-weight: 500; }
+
+.lista-check { list-style: none; display: grid; gap: 0.75rem; max-width: 640px; }
+.lista-check li { position: relative; padding-left: 1.7rem; font-size: 0.9rem; color: var(--texto-suave); }
+.lista-check li::before { content: '✓'; position: absolute; left: 0; font-size: 0.85rem; color: var(--escuro); }
+
+.tags { list-style: none; display: flex; flex-wrap: wrap; gap: 0.6rem; }
+.tags li { padding: 0.5rem 1.1rem; border: 1px solid var(--borda); border-radius: 999px; background: var(--bege-claro); font-size: 0.85rem; }
+
+/* Na seção escura o texto suave precisa de contraste */
+.secao-escura .texto { color: inherit; opacity: 0.75; }
+
+.grade { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; margin-top: 2.5rem; }
+.grade-semestre { padding: 1.4rem; border: 1px solid rgba(255, 255, 255, 0.14); border-radius: 14px; background: rgba(255, 255, 255, 0.06); }
+.grade-semestre h3 { margin-bottom: 1rem; font-size: 0.75rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; opacity: 0.6; }
+.grade-semestre ul { list-style: none; display: grid; gap: 0.55rem; font-size: 0.85rem; }
+.grade-semestre li { position: relative; padding-left: 1rem; opacity: 0.9; }
+.grade-semestre li::before { content: ''; position: absolute; left: 0; top: 0.6em; width: 4px; height: 4px; border-radius: 50%; background: currentColor; opacity: 0.6; }
+
+.turnos { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.2rem; margin-top: 2.5rem; }
+.turno { display: grid; gap: 0.4rem; padding: 1.5rem; border: 1px solid var(--borda); border-radius: 14px; background: var(--bege-claro); }
+.turno strong { font-size: 1rem; font-weight: 500; }
+.turno-horario { font-size: 1.3rem; }
+.turno-dias { font-size: 0.8rem; color: var(--texto-suave); }
+
+.cta-curso { text-align: center; }
+.cta-curso h2 { font-size: 1.9rem; }
+.cta-curso p { margin: 0.6rem 0 1.8rem; opacity: 0.75; }
+.cta-botoes { display: flex; flex-wrap: wrap; gap: 0.8rem; justify-content: center; }
+
+@media (max-width: 800px) {
+  .curso-hero { min-height: 380px; padding-top: 7.5rem; }
+}
