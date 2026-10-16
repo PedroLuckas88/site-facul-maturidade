@@ -1,5 +1,5 @@
-/* HERO: sem foto ainda, usa degradê. Para usar a foto: background-image: url('../assets/hero.jpg') */
-.hero { min-height: 560px; display: flex; align-items: center; padding: 7rem max(1.5rem, calc((100% - var(--largura)) / 2)) 4rem; color: #fff; background: linear-gradient(90deg, rgba(20, 20, 20, 0.9), rgba(20, 20, 20, 0.35)), linear-gradient(135deg, #4a4036, #1c1c1c); }
+/* HERO: foto da faculdade ao fundo, com degrade para manter o texto legivel */
+.hero { min-height: 560px; display: flex; align-items: center; padding: 7rem max(1.5rem, calc((100% - var(--largura)) / 2)) 4rem; color: #fff; background: linear-gradient(90deg, rgba(20, 20, 20, 0.9), rgba(20, 20, 20, 0.35)), url('../assets/hero.jpg') center/cover no-repeat; }
 .hero-conteudo { max-width: 460px; }
 .hero-conteudo p { margin: 1.2rem 0 2rem; opacity: 0.9; }
 .hero-botoes { display: flex; flex-wrap: wrap; gap: 0.8rem; }
@@ -10,7 +10,7 @@
 .grid-cursos { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
 .curso-card { background: var(--bege-claro); border-radius: 14px; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s; }
 .curso-card:hover { transform: translateY(-4px); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12); }
-.curso-img { height: 110px; background: linear-gradient(135deg, #8a7a68, #4a4036); }
+.curso-img { height: 150px; background-color: #4a4036; background-size: cover; background-position: center; }
 .curso-info { padding: 1.2rem; }
 .curso-info h3 { font-weight: 500; font-size: 1rem; min-height: 2.8rem; }
 .curso-meta { font-size: 0.8rem; color: var(--texto-suave); margin: 0.3rem 0 0.8rem; }
@@ -19,7 +19,7 @@
 
 .sobre { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
 .sobre p { margin: 1.2rem 0 2rem; opacity: 0.8; max-width: 420px; }
-.sobre-img { min-height: 260px; border-radius: 14px; background: linear-gradient(135deg, #6f6253, #3a3631); }
+.sobre-img { min-height: 320px; border-radius: 14px; background: #3a3631 url('../assets/campus.png') center/cover no-repeat; }
 .numeros { display: flex; flex-wrap: wrap; gap: 2rem; }
 .numeros strong { display: block; font-size: 1.6rem; font-weight: 400; }
 .numeros span { font-size: 0.75rem; opacity: 0.7; }

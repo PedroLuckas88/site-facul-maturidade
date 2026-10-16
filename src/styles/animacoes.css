@@ -1,0 +1,15 @@
+/* Animações de entrada ao rolar a página.
+   Os elementos recebem o atributo data-animacao pelo hook useAnimacaoScroll,
+   então sem JavaScript a página aparece normalmente, sem nada escondido. */
+[data-animacao='pendente'],
+[data-animacao='visivel'] {
+  transition: opacity 0.65s ease, transform 0.65s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+[data-animacao='pendente'] { opacity: 0; transform: translateY(28px); }
+[data-animacao='visivel'] { opacity: 1; transform: none; }
+
+/* Quem pediu menos movimento no sistema recebe tudo já visível */
+@media (prefers-reduced-motion: reduce) {
+  [data-animacao='pendente'] { opacity: 1; transform: none; }
+}
