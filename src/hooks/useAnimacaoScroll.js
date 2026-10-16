@@ -17,6 +17,14 @@ const grupos = [
   { seletor: '.faixa-preco', escalonar: true },
   { seletor: '.espacos', escalonar: true },
   { seletor: '.form', escalonar: true },
+  // Página de detalhe do curso
+  { seletor: '.curso-hero-conteudo' },
+  { seletor: '.subtitulo' },
+  { seletor: '.lista-check', escalonar: true },
+  { seletor: '.tags', escalonar: true },
+  { seletor: '.grade', escalonar: true },
+  { seletor: '.turnos', escalonar: true },
+  { seletor: '.cta-botoes' },
 ]
 
 const ATRASO_MAXIMO = 6

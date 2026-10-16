@@ -8,7 +8,7 @@
 .link-ver { font-size: 0.85rem; }
 
 .grid-cursos { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
-.curso-card { background: var(--bege-claro); border-radius: 14px; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s; }
+.curso-card { display: block; background: var(--bege-claro); border-radius: 14px; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s; }
 .curso-card:hover { transform: translateY(-4px); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12); }
 .curso-img { height: 150px; background-color: #4a4036; background-size: cover; background-position: center; }
 .curso-info { padding: 1.2rem; }

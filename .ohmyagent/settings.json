@@ -3,6 +3,10 @@
     {
       "tool": "Cmd(cd *)",
       "decision": "allow"
+    },
+    {
+      "tool": "Read",
+      "decision": "allow"
     }
   ]
 }
