@@ -28,11 +28,23 @@
 
 .chat-lista {
   list-style: none;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0;
   margin: 0;
-  padding: 0.45rem 0.6rem;
+  padding: 8px 10px;
   overflow-y: auto;
   flex: 1 1 auto;
+  min-height: 0;
+}
+
+/* Todo o espaço vazio fica ACIMA das mensagens, nunca entre elas */
+.chat-lista::before {
+  content: "";
+  flex: 1 1 auto;
+  min-height: 0;
+  pointer-events: none;
 }
 
 .chat-vazio {
@@ -40,17 +52,19 @@
   font-size: 0.78rem;
   text-align: center;
   padding: 0.7rem 0.5rem;
+  flex: 0 0 auto;
 }
 
 .chat-linha {
   display: block;
+  flex: 0 0 auto !important;
+  flex-grow: 0 !important;
   width: 100%;
-  margin: 0 0 0.22rem;
-  overflow: hidden;
-}
-
-.chat-linha:last-child {
-  margin-bottom: 0;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 0 2px;
+  line-height: 0;
+  font-size: 0;
 }
 
 .chat-eu-visitante .chat-linha.visitante,
@@ -66,10 +80,10 @@
 .chat-bolha {
   display: inline-block;
   max-width: 70%;
-  padding: 0.28rem 0.58rem;
-  border-radius: 10px;
+  padding: 5px 9px;
+  border-radius: 8px;
   font-size: 0.86rem;
-  line-height: 1.28;
+  line-height: 1.25;
   text-align: left;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
   vertical-align: top;
@@ -85,7 +99,7 @@
   display: block;
   font-size: 0.68rem;
   font-weight: 600;
-  margin-bottom: 0.06rem;
+  margin-bottom: 1px;
   color: var(--texto-suave);
 }
 
