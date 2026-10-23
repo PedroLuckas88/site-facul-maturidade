@@ -5,10 +5,12 @@ import { formatarPreco } from '../data/cursos'
 export default function CursoCard({ curso }) {
   return (
     <Link to={`/cursos/${curso.id}`} className="curso-card">
-      <div
+      <img
         className="curso-img"
-        style={{ backgroundImage: `url(${curso.imagem})` }}
-        aria-hidden="true"
+        src={curso.imagem}
+        alt={`Foto do curso de ${curso.nome}`}
+        loading="lazy"
+        decoding="async"
       />
       <div className="curso-info">
         <h3>{curso.nome}</h3>

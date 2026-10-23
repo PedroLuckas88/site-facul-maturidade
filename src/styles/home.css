@@ -10,7 +10,7 @@
 .grid-cursos { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
 .curso-card { display: block; background: var(--bege-claro); border-radius: 14px; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s; }
 .curso-card:hover { transform: translateY(-4px); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12); }
-.curso-img { height: 150px; background-color: #4a4036; background-size: cover; background-position: center; }
+.curso-img { display: block; width: 100%; height: 150px; object-fit: cover; object-position: center; background-color: #4a4036; }
 .curso-info { padding: 1.2rem; }
 .curso-info h3 { font-weight: 500; font-size: 1rem; min-height: 2.8rem; }
 .curso-meta { font-size: 0.8rem; color: var(--texto-suave); margin: 0.3rem 0 0.8rem; }
@@ -34,4 +34,11 @@
 .cta h2 { font-size: 1.8rem; }
 .cta p { margin: 0.5rem 0 1.5rem; color: var(--texto-suave); max-width: 420px; }
 
-@media (max-width: 800px) { .sobre { grid-template-columns: 1fr; } }
+@media (max-width: 800px) {
+  .sobre { grid-template-columns: 1fr; }
+  .curso-img { height: 140px; }
+}
+
+@media (max-width: 480px) {
+  .curso-img { height: 128px; }
+}

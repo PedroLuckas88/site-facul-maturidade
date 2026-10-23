@@ -7,9 +7,20 @@
 .chip { padding: 0.6rem 1.2rem; border-radius: 999px; border: 1px solid var(--borda); background: transparent; cursor: pointer; }
 .chip.ativo { background: var(--escuro); color: var(--bege-claro); }
 
-.espacos { list-style: none; display: flex; flex-wrap: wrap; gap: 1.2rem; margin-top: 2rem; }
-.espacos li { background: var(--bege-claro); padding: 1.2rem 1.5rem; border-radius: 14px; font-size: 0.9rem; }
-.espacos span { display: block; font-size: 1.6rem; }
+.espacos { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.2rem; margin-top: 2rem; }
+.espaco-card { background: var(--bege-claro); border-radius: 14px; overflow: hidden; font-size: 0.9rem; }
+.espaco-img { display: block; width: 100%; height: 160px; object-fit: cover; object-position: center; background-color: #4a4036; }
+.espaco-info { padding: 1rem 1.2rem 1.2rem; }
+.espaco-info strong { display: block; font-weight: 500; margin-bottom: 0.35rem; }
+.espaco-info p { color: var(--texto-suave); font-size: 0.85rem; }
+
+@media (max-width: 800px) {
+  .espaco-img { height: 148px; }
+}
+
+@media (max-width: 480px) {
+  .espaco-img { height: 132px; }
+}
 
 .form { display: grid; gap: 1.2rem; max-width: 420px; margin: 2rem 0; }
 .form label { display: grid; gap: 0.4rem; font-size: 0.9rem; }

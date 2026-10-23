@@ -5,6 +5,20 @@ import cienciasContabeis from '../assets/ciencias-contabeis.jpg'
 import direito from '../assets/direito.jpg'
 import gestaoRh from '../assets/gestao-rh.jpeg'
 import marketing from '../assets/marketing.jpg'
+import pedagogia from '../assets/pedagogia.jpg'
+import enfermagem from '../assets/enfermagem.jpg'
+import fisioterapia from '../assets/fisioterapia.jpg'
+import nutricao from '../assets/nutricao.jpg'
+import psicologia from '../assets/psicologia.jpg'
+import educacaoFisica from '../assets/educacao-fisica.jpg'
+import farmacia from '../assets/farmacia.jpg'
+import odontologia from '../assets/odontologia.jpg'
+import medicinaVeterinaria from '../assets/medicina-veterinaria.jpg'
+import engenhariaCivil from '../assets/engenharia-civil.jpg'
+import engenhariaProducao from '../assets/engenharia-producao.jpg'
+import arquitetura from '../assets/arquitetura.jpg'
+import sistemasInformacao from '../assets/sistemas-informacao.jpg'
+import cienciasEconomicas from '../assets/ciencias-economicas.jpg'
 
 // Turnos e horários valem para todos os cursos da instituição.
 export const turnos = [
@@ -12,10 +26,6 @@ export const turnos = [
   { nome: 'Tarde', horario: '13h30 às 18h', dias: 'Segunda a sexta-feira' },
   { nome: 'Noite', horario: '18h30 às 21h30', dias: 'Segunda a sexta-feira' },
 ]
-
-// Imagem provisória: o picsum devolve sempre a mesma foto para cada "seed".
-// Para usar uma foto definitiva, é só trocar a URL pelo link desejado.
-const imagemExterna = (seed) => `https://picsum.photos/seed/${seed}/1200/800`
 
 export const cursos = [
   {
@@ -253,7 +263,7 @@ export const cursos = [
     tipo: 'Graduação',
     semestres: 8,
     preco: 749,
-    imagem: imagemExterna('pedagogia'),
+    imagem: pedagogia,
     cargaHoraria: 3200,
     area: 'Educação',
     paraQueServe:
@@ -293,7 +303,7 @@ export const cursos = [
     tipo: 'Graduação',
     semestres: 10,
     preco: 1199,
-    imagem: imagemExterna('enfermagem'),
+    imagem: enfermagem,
     cargaHoraria: 4000,
     area: 'Ciências da Saúde',
     paraQueServe:
@@ -335,7 +345,7 @@ export const cursos = [
     tipo: 'Graduação',
     semestres: 10,
     preco: 1299,
-    imagem: imagemExterna('fisioterapia'),
+    imagem: fisioterapia,
     cargaHoraria: 4000,
     area: 'Ciências da Saúde',
     paraQueServe:
@@ -377,7 +387,7 @@ export const cursos = [
     tipo: 'Graduação',
     semestres: 8,
     preco: 999,
-    imagem: imagemExterna('nutricao'),
+    imagem: nutricao,
     cargaHoraria: 3200,
     area: 'Ciências da Saúde',
     paraQueServe:
@@ -417,7 +427,7 @@ export const cursos = [
     tipo: 'Graduação',
     semestres: 10,
     preco: 1399,
-    imagem: imagemExterna('psicologia'),
+    imagem: psicologia,
     cargaHoraria: 4000,
     area: 'Ciências Humanas',
     paraQueServe:
@@ -459,7 +469,7 @@ export const cursos = [
     tipo: 'Graduação',
     semestres: 8,
     preco: 849,
-    imagem: imagemExterna('educacao-fisica'),
+    imagem: educacaoFisica,
     cargaHoraria: 3200,
     area: 'Ciências da Saúde',
     paraQueServe:
@@ -499,7 +509,7 @@ export const cursos = [
     tipo: 'Graduação',
     semestres: 10,
     preco: 1299,
-    imagem: imagemExterna('farmacia'),
+    imagem: farmacia,
     cargaHoraria: 4200,
     area: 'Ciências da Saúde',
     paraQueServe:
@@ -541,7 +551,7 @@ export const cursos = [
     tipo: 'Graduação',
     semestres: 10,
     preco: 1599,
-    imagem: imagemExterna('odontologia'),
+    imagem: odontologia,
     cargaHoraria: 4200,
     area: 'Ciências da Saúde',
     paraQueServe:
@@ -583,7 +593,7 @@ export const cursos = [
     tipo: 'Graduação',
     semestres: 10,
     preco: 1499,
-    imagem: imagemExterna('medicina-veterinaria'),
+    imagem: medicinaVeterinaria,
     cargaHoraria: 4400,
     area: 'Ciências Agrárias',
     paraQueServe:
@@ -625,7 +635,7 @@ export const cursos = [
     tipo: 'Graduação',
     semestres: 10,
     preco: 1399,
-    imagem: imagemExterna('engenharia-civil'),
+    imagem: engenhariaCivil,
     cargaHoraria: 4000,
     area: 'Engenharias',
     paraQueServe:
@@ -667,7 +677,7 @@ export const cursos = [
     tipo: 'Graduação',
     semestres: 10,
     preco: 1349,
-    imagem: imagemExterna('engenharia-de-producao'),
+    imagem: engenhariaProducao,
     cargaHoraria: 4000,
     area: 'Engenharias',
     paraQueServe:
@@ -709,7 +719,7 @@ export const cursos = [
     tipo: 'Graduação',
     semestres: 10,
     preco: 1299,
-    imagem: imagemExterna('arquitetura-e-urbanismo'),
+    imagem: arquitetura,
     cargaHoraria: 4000,
     area: 'Ciências Sociais Aplicadas',
     paraQueServe:
@@ -751,7 +761,7 @@ export const cursos = [
     tipo: 'Graduação',
     semestres: 8,
     preco: 1199,
-    imagem: imagemExterna('sistemas-de-informacao'),
+    imagem: sistemasInformacao,
     cargaHoraria: 3200,
     area: 'Tecnologia da Informação',
     paraQueServe:
@@ -791,7 +801,7 @@ export const cursos = [
     tipo: 'Graduação',
     semestres: 8,
     preco: 1099,
-    imagem: imagemExterna('ciencias-economicas'),
+    imagem: cienciasEconomicas,
     cargaHoraria: 3200,
     area: 'Ciências Sociais Aplicadas',
     paraQueServe:
