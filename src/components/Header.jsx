@@ -11,7 +11,7 @@ const links = [
 ]
 
 export default function Header() {
-  const [aberto, setAberto] = useState(false) // menu mobile
+  const [aberto, setAberto] = useState(false)
 
   return (
     <header className="header">
@@ -30,7 +30,6 @@ export default function Header() {
             {l.label}
           </NavLink>
         ))}
-        <button className="btn-portal">Portal do Aluno</button>
       </nav>
     </header>
   )

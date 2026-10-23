@@ -7,6 +7,7 @@
 .nav a { opacity: 0.75; padding-bottom: 4px; border-bottom: 1px solid transparent; }
 .nav a:hover, .nav a.active { opacity: 1; border-color: #fff; }
 .btn-portal { background: rgba(0, 0, 0, 0.35); color: #fff; border: 1px solid rgba(255, 255, 255, 0.2); padding: 0.5rem 1.1rem; border-radius: 999px; cursor: pointer; }
+.nav a.btn-portal { opacity: 1; border-bottom: 0; }
 
 .menu-btn { display: none; background: none; border: 0; color: #fff; font-size: 1.6rem; cursor: pointer; }
 

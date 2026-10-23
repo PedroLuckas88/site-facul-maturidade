@@ -1,0 +1,127 @@
+.conversa.pagina {
+  max-width: none;
+  min-height: 100vh;
+  padding-top: 5.5rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.conversa-topo { margin-bottom: 0.8rem; flex: 0 0 auto; }
+.conversa h2 { font-size: 1.2rem; }
+.conversa .texto { margin-top: 0.2rem; font-size: 0.8rem; max-width: none; }
+.conversa .chat-aviso { flex: 0 0 auto; }
+
+.conversa .chat-janela {
+  flex: 1 1 auto;
+  min-height: calc(100vh - 12rem);
+}
+
+.chat-janela {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #e8dfd4;
+  border: 1px solid var(--borda);
+}
+
+.chat-lista {
+  list-style: none;
+  display: block;
+  margin: 0;
+  padding: 0.75rem;
+  overflow-y: auto;
+  flex: 1 1 auto;
+}
+
+.chat-vazio {
+  color: var(--texto-suave);
+  font-size: 0.78rem;
+  text-align: center;
+  padding: 1.2rem 0.5rem;
+}
+
+.chat-linha {
+  display: block;
+  width: 100%;
+  margin: 0 0 0.45rem;
+  overflow: hidden;
+}
+
+.chat-eu-visitante .chat-linha.visitante,
+.chat-eu-admin .chat-linha.admin {
+  text-align: right;
+}
+
+.chat-eu-visitante .chat-linha.admin,
+.chat-eu-admin .chat-linha.visitante {
+  text-align: left;
+}
+
+.chat-bolha {
+  display: inline-block;
+  max-width: 70%;
+  padding: 0.4rem 0.7rem;
+  border-radius: 10px;
+  font-size: 0.86rem;
+  line-height: 1.35;
+  text-align: left;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+  vertical-align: top;
+}
+
+.chat-bolha p {
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.chat-bolha span {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 600;
+  margin-bottom: 0.15rem;
+  color: var(--texto-suave);
+}
+
+.chat-eu-visitante .chat-linha.visitante .chat-bolha,
+.chat-eu-admin .chat-linha.admin .chat-bolha {
+  background: #efe7dc;
+  border-bottom-right-radius: 3px;
+}
+
+.chat-eu-visitante .chat-linha.admin .chat-bolha,
+.chat-eu-admin .chat-linha.visitante .chat-bolha {
+  background: #fff;
+  border-bottom-left-radius: 3px;
+}
+
+.chat-form {
+  display: flex;
+  gap: 0.4rem;
+  align-items: flex-end;
+  padding: 0.5rem;
+  background: #f3eee7;
+  border-top: 1px solid var(--borda);
+  flex: 0 0 auto;
+}
+
+.chat-form textarea {
+  flex: 1;
+  min-height: 40px;
+  max-height: 90px;
+  padding: 0.5rem 0.8rem;
+  border-radius: 20px;
+  border: 0;
+  background: #fff;
+  resize: none;
+  font-size: 0.85rem;
+}
+
+.chat-form .btn {
+  padding: 0.45rem 0.9rem;
+  font-size: 0.8rem;
+}
+
+.chat-aviso { margin-top: 0.6rem; font-size: 0.75rem; color: var(--texto-suave); }

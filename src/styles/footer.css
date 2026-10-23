@@ -3,3 +3,4 @@
 .footer nav { display: flex; gap: 1.2rem; font-size: 0.85rem; opacity: 0.8; }
 .footer address { font-style: normal; font-size: 0.85rem; opacity: 0.8; }
 .footer small { display: block; margin-top: 2rem; font-size: 0.7rem; opacity: 0.5; }
+.footer-interno { margin-left: 0.6rem; opacity: 0.7; }

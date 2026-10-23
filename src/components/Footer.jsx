@@ -18,7 +18,10 @@ export default function Footer() {
           <p>contato@avante.edu.br</p>
         </address>
       </div>
-      <small>© {new Date().getFullYear()} Universidade Avante. Todos os direitos reservados.</small>
+      <small>
+        © {new Date().getFullYear()} Universidade Avante. Todos os direitos reservados.
+        {' '}<Link to="/secretaria" className="footer-interno">Área interna</Link>
+      </small>
     </footer>
   )
 }

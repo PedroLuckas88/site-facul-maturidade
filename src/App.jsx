@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useLocation } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import ScrollToTop from './components/ScrollToTop'
@@ -9,17 +9,21 @@ import CursoDetalhe from './pages/CursoDetalhe'
 import Instituicao from './pages/Instituicao'
 import Estrutura from './pages/Estrutura'
 import Contato from './pages/Contato'
+import Conversa from './pages/Conversa'
+import AdminLogin from './pages/admin/AdminLogin'
+import AdminPainel from './pages/admin/AdminPainel'
 import NotFound from './pages/NotFound'
 import './styles/animacoes.css'
 
-// Todas as rotas do site ficam aqui
 export default function App() {
+  const { pathname } = useLocation()
+  const areaAdmin = pathname.startsWith('/secretaria') || pathname.startsWith('/admin')
   useAnimacaoScroll()
 
   return (
     <>
       <ScrollToTop />
-      <Header />
+      {!areaAdmin && <Header />}
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -28,10 +32,13 @@ export default function App() {
           <Route path="/instituicao" element={<Instituicao />} />
           <Route path="/estrutura" element={<Estrutura />} />
           <Route path="/contato" element={<Contato />} />
+          <Route path="/conversa/:token" element={<Conversa />} />
+          <Route path="/secretaria/login" element={<AdminLogin />} />
+          <Route path="/secretaria" element={<AdminPainel />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
-      <Footer />
+      {!areaAdmin && <Footer />}
     </>
   )
 }

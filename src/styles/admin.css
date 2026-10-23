@@ -1,0 +1,51 @@
+.admin, .admin-login {
+  min-height: 100vh;
+  padding: 1.2rem max(1rem, calc((100% - 1280px) / 2));
+  background: var(--bege);
+  color: var(--texto);
+}
+
+.admin-login { max-width: 480px; margin: 0 auto; padding-top: 6rem; }
+.admin-login h1 { margin-bottom: 0.6rem; }
+.admin-login p { color: var(--texto-suave); }
+
+.admin-status { padding: 6rem 1.5rem; }
+
+.admin-topo { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; align-items: flex-end; margin-bottom: 1rem; }
+.admin-topo h1 { font-size: 1.5rem; }
+.admin-topo-acoes { display: flex; align-items: center; gap: 1rem; }
+.admin-email { font-size: 0.85rem; color: var(--texto-suave); }
+
+.admin .btn-borda { border-color: var(--escuro); color: var(--escuro); background: transparent; }
+
+.admin-filtros { display: grid; gap: 0.7rem; margin-bottom: 1rem; }
+.admin-filtros input { padding: 0.7rem 1.1rem; border-radius: 999px; border: 1px solid var(--borda); background: var(--bege-claro); }
+.chips { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+
+.admin-corpo { display: grid; grid-template-columns: minmax(220px, 300px) 1fr; gap: 1rem; align-items: stretch; min-height: calc(100vh - 11rem); }
+.admin-lista ul { list-style: none; display: grid; gap: 0.6rem; }
+.admin-card { width: 100%; text-align: left; padding: 1rem; border-radius: 12px; border: 1px solid var(--borda); background: var(--bege-claro); cursor: pointer; display: grid; gap: 0.25rem; }
+.admin-card span { font-size: 0.8rem; color: var(--texto-suave); }
+.admin-card.ativo { border-color: var(--escuro); box-shadow: 0 0 0 1px var(--escuro); }
+
+.badge { font-style: normal; font-size: 0.7rem; letter-spacing: 0.04em; text-transform: uppercase; }
+.badge-novo { color: #8a5a12; }
+.badge-em_conversa { color: #1f4e79; }
+.badge-aprovado { color: #1b5e20; }
+.badge-recusado { color: #8a1f1f; }
+.badge-arquivado { color: #5c5c5c; }
+
+.admin-detalhe { background: var(--bege-claro); border-radius: 14px; padding: 1.1rem 1.2rem; display: flex; flex-direction: column; min-height: calc(100vh - 11rem); }
+.admin-detalhe h2 { font-size: 1.4rem; }
+.admin-meta { font-size: 0.8rem; color: var(--texto-suave); margin: 0.3rem 0 1.2rem; }
+.admin-detalhe dl { display: grid; gap: 0.9rem; }
+.admin-detalhe dt { font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--texto-suave); }
+.admin-detalhe dd { margin-top: 0.2rem; }
+.admin-status-campo { display: grid; gap: 0.4rem; margin-top: 1.5rem; font-size: 0.9rem; }
+.admin-status-campo select, .admin-status-campo textarea { max-width: 100%; padding: 0.6rem 0.8rem; border-radius: 10px; border: 1px solid var(--borda); background: #fff; }
+.admin-chat-titulo { margin: 1rem 0 0.5rem; font-size: 0.9rem; font-weight: 500; }
+.admin-detalhe .chat-janela { flex: 1 1 auto; min-height: 420px; height: auto; max-height: none; }
+
+@media (max-width: 800px) {
+  .admin-corpo { grid-template-columns: 1fr; }
+}
